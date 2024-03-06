@@ -53,6 +53,7 @@ img {vertical-align: middle;}
   padding: 8px 12px;
   position: relative;
   bottom: 25%;
+  top: 500px;
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -148,7 +149,7 @@ for (let i = 1; i < (parseInt(size) + 1); i++) {
 if ((slideIndex-1) < c.length) {
   let slide = document.getElementsByClassName("slideshow-container")[0];
   slide.innerHTML = "<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%;top:0;position:sticky'><div class='text'>" + c[slideIndex -1] + "</div></div>";
-  console.log("<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%;top:0;position:sticky'><div class='text'>" + c[slideIndex -1] + "</div></div>");
+  console.log("<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%;top:0;position:fixed'><div class='text'>" + c[slideIndex -1] + "</div></div>");
   }
 }
 </script>
