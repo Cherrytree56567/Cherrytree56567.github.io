@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 <style>
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0;overflow:hidden;}
+body {font-family: "Creepster", system-ui; margin:0;}
 .mySlides {display: block}
 img {vertical-align: middle;}
 
@@ -44,11 +47,11 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  font-family: "Creepster", system-ui;
+  color: red;
   font-size: 50px;
   padding: 8px 12px;
-  position: absolute;
-  top: 50%;
+  position: relative;
   bottom: 25%;
   width: 100%;
   text-align: center;
@@ -144,8 +147,8 @@ for (let i = 1; i < (parseInt(size) + 1); i++) {
 }
 if ((slideIndex-1) < c.length) {
   let slide = document.getElementsByClassName("slideshow-container")[0];
-  slide.innerHTML = "<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%'><div class='text'>" + c[slideIndex -1] + "</div></div>";
-  console.log("<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%'><div class='text'>" + c[slideIndex -1] + "</div></div>");
+  slide.innerHTML = "<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%;top:0;position:sticky'><div class='text'>" + c[slideIndex -1] + "</div></div>";
+  console.log("<div class='mySlides fade' onclick='plusSlides(1)'><div class='numbertext'>" + slideIndex + " / " + c.length + "</div><img src='https://source.unsplash.com/1600x900/?dark+scary&a=" + slideIndex + "' style='width:100%;top:0;position:sticky'><div class='text'>" + c[slideIndex -1] + "</div></div>");
   }
 }
 </script>
