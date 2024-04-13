@@ -111,9 +111,9 @@ body, html {
   position: absolute;
   top: 100%;
   background: none;
-  height: 100%;
+  min-height: 100%;
   display: block;
-	width: 100%;
+  width: 100%;
 }
 			
 .blank-nav {
@@ -121,11 +121,11 @@ body, html {
 }
 
 .Projects-title {
-	text-align: center;
+  text-align: center;
 }
 
 .Cards {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
